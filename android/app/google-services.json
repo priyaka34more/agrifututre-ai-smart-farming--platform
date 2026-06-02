@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "637295201757",
+    "project_id": "agrifuture-1e993",
+    "storage_bucket": "agrifuture-1e993.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637295201757:android:643b36175efd42e0f6fa34",
+        "android_client_info": {
+          "package_name": "com.agrifuture.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637295201757-rbtcittb3p2140s4808r07n7kravf834.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPW99rA_t0e6N0Rwi0EoXQFlHTFhOqrLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637295201757-rbtcittb3p2140s4808r07n7kravf834.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

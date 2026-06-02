@@ -1,0 +1,260 @@
+.my-usage-page {
+  min-height: 100vh;
+  background: #F7FAF8;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+}
+
+.my-usage-container {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 16px 16px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.usage-hero-card,
+.usage-section {
+  background: #ffffff;
+  border: 1px solid #E5F0E8;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+}
+
+.usage-hero-card {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 18px;
+}
+
+.usage-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px;
+}
+
+.usage-filter-row {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.usage-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.usage-filter-group label {
+  color: #475569;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.usage-filter-group select {
+  border-radius: 14px;
+  border: 1px solid #D1D5DB;
+  padding: 12px 14px;
+  background: #FFFFFF;
+  color: #0F172A;
+  font-size: 14px;
+}
+
+.usage-search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.usage-search-bar svg {
+  position: absolute;
+  left: 14px;
+  color: #94A3B8;
+}
+
+.usage-search-bar input {
+  width: 100%;
+  padding: 12px 14px 12px 42px;
+  border-radius: 14px;
+  border: 1px solid #D1D5DB;
+  background: #FFFFFF;
+  color: #0F172A;
+  font-size: 14px;
+}
+
+@media (min-width: 640px) {
+  .usage-toolbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .usage-filter-row {
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  .usage-filter-group {
+    flex: 1;
+  }
+
+  .usage-search-bar {
+    max-width: 320px;
+  }
+}
+
+.usage-hero-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: #E6F4E9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usage-hero-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #143D26;
+  margin: 0;
+}
+
+.usage-hero-subtitle {
+  margin: 6px 0 0;
+  color: #4B5563;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.usage-section {
+  padding: 16px;
+}
+
+.usage-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.usage-section-header h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0F172A;
+}
+
+.usage-card-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+.usage-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 18px;
+}
+
+.usage-card-icon {
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usage-card-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.usage-card-label {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.ai-insights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.insight-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px;
+  border-radius: 18px;
+  background: #F8FCF9;
+}
+
+.insight-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: #EAF7EF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1B7F4A;
+  flex-shrink: 0;
+}
+
+.insight-item span {
+  color: #334155;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.usage-chart-section {
+  padding-top: 0;
+}
+
+.usage-chart-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.chart-card {
+  background: #F8FCF9;
+  border-radius: 18px;
+  padding: 14px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chart-card-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0F172A;
+}
+
+@media (min-width: 640px) {
+  .usage-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .usage-chart-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 420px) {
+  .usage-hero-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

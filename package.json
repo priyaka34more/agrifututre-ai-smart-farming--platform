@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "print-client-env": "node scripts/print_client_env.js"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^5.4.2"
+  }
+}

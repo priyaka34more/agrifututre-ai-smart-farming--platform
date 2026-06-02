@@ -1,0 +1,56 @@
+# AgriFuture AI Backend - Phase A Requirements
+# Core FastAPI dependencies for production-ready backend
+
+# FastAPI and ASGI server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Authentication and Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+
+# Data Validation and Serialization
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Database (for future phases)
+# sqlalchemy==2.0.23
+# sqlite3  # Built-in with Python
+
+# Development and Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+
+# CORS Support
+python-dotenv==1.0.0
+
+# Optional: For enhanced security
+# python-decouple==3.8
+
+# Optional: For logging
+# structlog==23.2.0
+
+# Optional: For rate limiting
+# slowapi==0.1.9
+
+# Optional: For API documentation
+# fastapi-pagination==0.12.13
+
+# Data Science and Machine Learning
+numpy==1.24.3
+pandas==2.0.3
+scikit-learn==1.3.0
+statsmodels==0.14.0
+
+# Image Processing
+opencv-python==4.8.1.78
+pillow==10.0.1
+
+# HTTP Client for external APIs
+aiohttp==3.9.1
+requests==2.31.0
+
+# Date and Time utilities
+python-dateutil==2.8.2

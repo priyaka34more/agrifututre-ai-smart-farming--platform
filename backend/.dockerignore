@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+venv/
+ENV/
+env/
+.vscode/
+.git/
+.gitignore
+agri.db
+data/
+training/
+dataset/
+node_modules/

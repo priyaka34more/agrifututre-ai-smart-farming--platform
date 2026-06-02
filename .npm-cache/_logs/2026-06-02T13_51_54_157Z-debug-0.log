@@ -1,0 +1,23 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.2
+2 info using node@v22.17.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:D:\agrifutured\frontend\.npmrc
+5 silly config load:file:C:\Users\mored\.npmrc
+6 silly config load:file:C:\Users\mored\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install" "--legacy-peer-deps" "--cache" "D:\\agrifutured\\.npm-cache"
+9 verbose logfile logs-max:10 dir:D:\agrifutured\.npm-cache\_logs\2026-06-02T13_51_54_157Z-
+10 verbose logfile D:\agrifutured\.npm-cache\_logs\2026-06-02T13_51_54_157Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest @capacitor/android@^8.3.4
+15 silly packumentCache full:https://registry.npmjs.org/@capacitor%2fandroid cache-miss
+16 http fetch GET https://registry.npmjs.org/@capacitor%2fandroid attempt 1 failed with UNABLE_TO_VERIFY_LEAF_SIGNATURE
+17 http fetch GET https://registry.npmjs.org/@capacitor%2fandroid attempt 2 failed with UNABLE_TO_VERIFY_LEAF_SIGNATURE
+18 http fetch GET https://registry.npmjs.org/@capacitor%2fandroid attempt 3 failed with UNABLE_TO_VERIFY_LEAF_SIGNATURE
+19 silly fetch manifest @capacitor/cli@^8.3.4
+20 silly packumentCache full:https://registry.npmjs.org/@capacitor%2fcli cache-miss
+21 http fetch GET https://registry.npmjs.org/@capacitor%2fcli attempt 1 failed with UNABLE_TO_VERIFY_LEAF_SIGNATURE
+22 http fetch GET https://registry.npmjs.org/@capacitor%2fcli attempt 2 failed with UNABLE_TO_VERIFY_LEAF_SIGNATURE

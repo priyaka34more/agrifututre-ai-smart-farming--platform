@@ -1,0 +1,203 @@
+.profile-page {
+  min-height: 100vh;
+  background: #F7FAF8;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+}
+.profile-container {
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 16px 80px 16px;
+}
+/* Profile Header Card */
+.profile-header-card {
+  background: #F8FCF9;
+  border: 1px solid #E5F0E8;
+  border-radius: 18px;
+  padding: 20px 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+.profile-header-content {
+  display: flex;
+  gap: 16px;
+}
+.profile-avatar-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+.profile-avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 22px;
+  background: #E0EFE4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.profile-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-avatar-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-avatar-edit-btn {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #1B7F4A;
+  border: 3px solid #F8FCF9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+.profile-name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.profile-name {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #143D26;
+  margin: 0;
+}
+.verified-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: fit-content;
+}
+.verified-badge span {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1B7F4A;
+}
+.profile-detail {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #64748B;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+.farmer-id-label {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748B;
+}
+.farmer-id-value {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #143D26;
+}
+/* Profile Section */
+.profile-section {
+  background: #FFFFFF;
+  border-radius: 18px;
+  padding: 16px 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+.section-title {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 8px 12px 8px;
+}
+/* Account Menu List */
+.account-menu-list {
+  display: flex;
+  flex-direction: column;
+}
+.account-menu-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 8px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #F3F4F6;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  text-align: left;
+}
+.account-menu-item:hover {
+  background-color: #F9FAFB;
+}
+.account-menu-item:last-child {
+  border-bottom: none;
+}
+.menu-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.menu-text {
+  flex: 1;
+  min-width: 0;
+}
+.menu-title {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #111827;
+}
+.menu-subtitle {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #6B7280;
+  margin-top: 2px;
+}
+.account-menu-item.logout-item .menu-title {
+  color: #DC2626;
+}
+@media (max-width: 520px) {
+  .profile-header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .profile-avatar-wrapper {
+    margin-bottom: 10px;
+  }
+  .profile-info {
+    align-items: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .profile-container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

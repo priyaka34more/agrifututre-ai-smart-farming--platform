@@ -1,0 +1,153 @@
+.farm-advisory-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F6F8F5;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.farm-advisory-shell {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.farm-advisory-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.farm-advisory-header h1 {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #0F172A;
+  margin: 0;
+}
+
+.farm-advisory-back,
+.farm-advisory-refresh {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: #ffffff;
+  color: #0F172A;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.farm-advisory-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.farm-advisory-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+.farm-advisory-meta-item strong {
+  font-size: 1rem;
+  color: #0F172A;
+}
+
+.farm-advisory-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #D1FAE5;
+  padding: 20px;
+  box-shadow: 0 16px 40px rgba(16, 185, 129, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.farm-advisory-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0F172A;
+}
+
+.farm-advisory-status,
+.farm-advisory-error {
+  padding: 14px;
+  border-radius: 16px;
+  background: #f8fafc;
+  color: #334155;
+  font-size: 0.98rem;
+}
+
+.farm-advisory-error {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+.farm-advisory-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.farm-advisory-list-item {
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid #E2E8F0;
+  background: #F8FEF7;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.farm-advisory-item-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0F172A;
+}
+
+.farm-advisory-item-text {
+  font-size: 0.97rem;
+  line-height: 1.7;
+  color: #164E63;
+}
+
+@media (max-width: 640px) {
+  .farm-advisory-shell {
+    gap: 14px;
+  }
+
+  .farm-advisory-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .farm-advisory-back,
+  .farm-advisory-refresh {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .farm-advisory-meta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

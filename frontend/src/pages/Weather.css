@@ -1,0 +1,342 @@
+﻿.weather-page {
+  min-height: 100vh;
+  background: #F7FAF8;
+}
+.weather-container {
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 16px 80px 16px;
+}
+/* Current Weather Card */
+.current-weather-card {
+  background: #FFFFFF;
+  border: 1px solid #E3ECE6;
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.current-weather-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.current-weather-icon {
+  width: 64px;
+  height: 64px;
+  background: #EAF7EF;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.current-weather-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.current-weather-temp {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #143D26;
+  margin: 0;
+}
+.current-weather-condition {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #64748B;
+}
+.current-weather-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #475569;
+}
+.current-weather-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.current-weather-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 10px;
+  background: #F7FAF8;
+  border-radius: 14px;
+}
+.current-weather-metric-value {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #143D26;
+}
+.current-weather-metric-label {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #64748B;
+}
+/* Weather Risk Summary */
+.risk-summary-card {
+  background: #FFFFFF;
+  border: 1px solid #E3ECE6;
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.risk-summary-title {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #143D26;
+  margin: 0 0 12px 0;
+}
+.risk-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.risk-summary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 8px;
+  background: #F7FAF8;
+  border-radius: 14px;
+}
+.risk-summary-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.risk-summary-label {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #64748B;
+}
+.risk-summary-value {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #143D26;
+}
+/* AI Farming Advice */
+.ai-advice-card {
+  background: #EAF7EF;
+  border: 1px solid #D5EFD9;
+  border-left: 4px solid #1B7F4A;
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.ai-advice-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.ai-advice-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #1B7F4A 0%, #2E8B57 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ai-advice-title {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #143D26;
+}
+.ai-advice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ai-advice-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #143D26;
+}
+/* 7-Day Temperature Trend */
+.forecast-card {
+  background: #FFFFFF;
+  border: 1px solid #E3ECE6;
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.forecast-scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(31, 41, 55, 0.4) transparent;
+}
+.forecast-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.forecast-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.forecast-scroll::-webkit-scrollbar-thumb {
+  background: rgba(31, 41, 55, 0.25);
+  border-radius: 999px;
+}
+.forecast-header {
+  margin-bottom: 12px;
+}
+.forecast-title {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #143D26;
+  margin: 0 0 4px 0;
+}
+.forecast-subtitle {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #64748B;
+  margin: 0;
+}
+.forecast-chart {
+  margin-bottom: 12px;
+}
+.forecast-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #E3ECE6;
+}
+.forecast-summary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 8px;
+  background: #F7FAF8;
+  border-radius: 14px;
+}
+.forecast-summary-label {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #64748B;
+}
+.forecast-summary-value {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #143D26;
+}
+.forecast-day {
+  min-width: 92px;
+  flex: 0 0 auto;
+  padding: 16px 12px;
+  background: #EFF6EE;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+.forecast-day-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1B4332;
+}
+.forecast-day-temp {
+  font-size: 18px;
+  font-weight: 700;
+  color: #166534;
+}
+.forecast-day-rain {
+  font-size: 13px;
+  color: #4B5563;
+}
+/* Farming Recommendations */
+.recommendations-card {
+  background: #FFFFFF;
+  border: 1px solid #E3ECE6;
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.recommendations-title {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #143D26;
+  margin: 0 0 12px 0;
+}
+.recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.recommendation-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 8px;
+  background: #F7FAF8;
+  border-radius: 14px;
+}
+.recommendation-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recommendation-text {
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #143D26;
+  text-align: center;
+}
+@media (max-width: 520px) {
+  .current-weather-top {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .current-weather-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 420px) {
+  .recommendations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

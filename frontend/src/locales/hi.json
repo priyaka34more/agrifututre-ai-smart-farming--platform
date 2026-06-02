@@ -1,0 +1,58 @@
+{
+  "common": {
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "loading": "लोड हो रहा है...",
+    "success": "सफल!",
+    "error": "त्रुटि",
+    "retry": "पुनः प्रयास करें",
+    "close": "बंद करें"
+  },
+  "nav": {
+    "dashboard": "डैशबोर्ड",
+    "disease": "रोग पहचान",
+    "market": "बाजार भाव",
+    "weather": "मौसम",
+    "yield": "उपज अनुमान",
+    "profile": "प्रोफाइल",
+    "history": "इतिहास",
+    "reports": "रिपोर्ट और विश्लेषण",
+    "schemes": "सरकारी योजनाएँ",
+    "tips": "खेती के टिप्स"
+  },
+  "dashboard": {
+    "greetingMorning": "सुप्रभात",
+    "greetingAfternoon": "नमस्कार",
+    "greetingEvening": "शुभ संध्या",
+    "quickServices": "त्वरित सेवाएँ",
+    "recentActivity": "हाल की खेती गतिविधि",
+    "todaysTip": "आज का खेती टिप",
+    "todaysInsights": "आज की खेती जानकारी",
+    "cropHealth": "फसल स्वास्थ्य",
+    "irrigation": "सिंचाई",
+    "weatherAdvisory": "आज की खेती सलाह"
+  },
+  "disease": {
+    "title": "फसल रोग पहचान",
+    "uploadImage": "फसल की तस्वीर अपलोड करें",
+    "takePhoto": "फोटो लें",
+    "detecting": "फसल की तस्वीर का विश्लेषण हो रहा है...",
+    "healthy": "स्वस्थ फसल",
+    "diseaseDetected": "रोग पहचाना गया",
+    "confidence": "विश्वास",
+    "recommendation": "उपचार सिफारिश",
+    "remedy": "उपयुक्त फंगीसाइड लगाएँ",
+    "prevention": "रोकथाम टिप्स"
+  },
+  "profile": {
+    "editFarm": "खेत प्रोफाइल संपादित करें",
+    "farmerName": "किसान का नाम",
+    "location": "स्थान",
+    "mainCrop": "मुख्य फसल",
+    "landSize": "भूमि का आकार",
+    "soilType": "मिट्टी का प्रकार",
+    "irrigationType": "सिंचाई का प्रकार",
+    "language": "भाषा",
+    "savedSuccess": "प्रोफाइल सफलतापूर्वक सहेजा गया!"
+  }
+}

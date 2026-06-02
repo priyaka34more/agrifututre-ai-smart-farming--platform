@@ -1,0 +1,58 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "success": "Success!",
+    "error": "Error",
+    "retry": "Retry",
+    "close": "Close"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "disease": "Disease Detection",
+    "market": "Market Price",
+    "weather": "Weather",
+    "yield": "Yield Prediction",
+    "profile": "Profile",
+    "history": "History",
+    "reports": "Reports & Analytics",
+    "schemes": "Govt Schemes",
+    "tips": "Farming Tips"
+  },
+  "dashboard": {
+    "greetingMorning": "Good Morning",
+    "greetingAfternoon": "Good Afternoon",
+    "greetingEvening": "Good Evening",
+    "quickServices": "Quick Services",
+    "recentActivity": "Recent Farm Activity",
+    "todaysTip": "Today's Farming Tip",
+    "todaysInsights": "Today's Farm Insights",
+    "cropHealth": "Crop Health",
+    "irrigation": "Irrigation",
+    "weatherAdvisory": "Today's Farm Advisory"
+  },
+  "disease": {
+    "title": "Crop Disease Detection",
+    "uploadImage": "Upload Crop Image",
+    "takePhoto": "Take Photo",
+    "detecting": "Analyzing crop image...",
+    "healthy": "Healthy Crop",
+    "diseaseDetected": "Disease Detected",
+    "confidence": "Confidence",
+    "recommendation": "Treatment Recommendation",
+    "remedy": "Apply appropriate fungicide",
+    "prevention": "Prevention Tips"
+  },
+  "profile": {
+    "editFarm": "Edit Farm Profile",
+    "farmerName": "Farmer Name",
+    "location": "Location",
+    "mainCrop": "Main Crop",
+    "landSize": "Land Size",
+    "soilType": "Soil Type",
+    "irrigationType": "Irrigation Type",
+    "language": "Language",
+    "savedSuccess": "Profile saved successfully!"
+  }
+}

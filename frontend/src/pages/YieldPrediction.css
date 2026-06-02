@@ -1,0 +1,826 @@
+/* 🌾 YIELD PREDICTION LAYOUT & STYLE SYSTEM */
+
+:root {
+  --bg-gradient: linear-gradient(135deg, #f0fdf4 0%, #eff6ff 50%, #ffffff 100%);
+  --slate-900: #0f172a;
+  --slate-800: #1e293b;
+  --slate-700: #334155;
+  --slate-600: #475569;
+  --slate-500: #64748b;
+  --slate-400: #94a3b8;
+  --slate-300: #cbd5e1;
+  --emerald-500: #10b981;
+  --emerald-600: #059669;
+  --emerald-50: #ecfdf5;
+  --blue-500: #3b82f6;
+  --blue-50: #eff6ff;
+  --amber-500: #f59e0b;
+  --amber-50: #fffbeb;
+  --purple-500: #8b5cf6;
+}
+
+/* 1. Main Page Container & Layout Alignments */
+.yield-container {
+  background: var(--bg-gradient) !important;
+  color: var(--slate-800) !important;
+  min-height: 100vh;
+  position: relative;
+  font-family: var(--ag-font-body, 'Noto Sans', 'Noto Sans Devanagari', 'Segoe UI', Arial, sans-serif) !important;
+  padding: 24px 14px 120px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+/* 2. Critical Centering & Responsive Width Rules (Utility Overrides) */
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.max-w-xl {
+  max-width: 576px !important;
+  width: 100% !important;
+}
+
+.max-w-2xl {
+  max-width: 672px !important;
+  width: 100% !important;
+}
+
+.max-w-3xl {
+  max-width: 768px !important;
+  width: 100% !important;
+}
+
+.max-w-4xl {
+  max-width: 896px !important;
+  width: 100% !important;
+}
+
+.max-w-6xl {
+  max-width: 1152px !important;
+  width: 100% !important;
+}
+
+/* 3. Center Wrapper Elements */
+.yield-content-wrapper {
+  width: 100% !important;
+  max-width: 850px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 4. White Glassmorphism Card System */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 15px 35px -10px rgba(30, 41, 59, 0.08) !important;
+  transition: all 0.3s ease;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.glass-panel:hover {
+  border-color: rgba(16, 185, 129, 0.25) !important;
+  box-shadow: 0 20px 40px -10px rgba(16, 185, 129, 0.12) !important;
+}
+
+/* Light Metric Cards Grid */
+.yield-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 16px;
+  width: 100% !important;
+}
+
+@media (min-width: 640px) {
+  .yield-metrics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .yield-metrics-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Light Metric Cards style */
+.metrics-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(226, 232, 240, 0.8) !important;
+  border-radius: 20px !important;
+  padding: 20px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  min-height: 120px;
+  box-shadow: 0 4px 15px -3px rgba(30, 41, 59, 0.04) !important;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.metrics-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(16, 185, 129, 0.3) !important;
+  box-shadow: 0 10px 20px -5px rgba(16, 185, 129, 0.15) !important;
+}
+
+/* Fluid Chart Box */
+.chart-wrapper {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  margin-top: 12px;
+}
+
+/* Clean, Farmer-friendly form fields */
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.form-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--slate-600);
+  text-align: left;
+}
+
+.clean-input {
+  width: 100% !important;
+  background: #ffffff !important;
+  border: 1px solid var(--slate-300) !important;
+  border-radius: 14px !important;
+  padding: 12px 16px !important;
+  color: var(--slate-900) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  transition: all 0.25s ease !important;
+  outline: none !important;
+  box-sizing: border-box;
+}
+
+.clean-input:focus {
+  border-color: var(--emerald-500) !important;
+  background: #ffffff !important;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.15) !important;
+}
+
+/* Light Theme Back Button */
+.btn-back {
+  padding: 8px !important;
+  background: #ffffff !important;
+  color: var(--slate-600) !important;
+  border-radius: 12px !important;
+  border: 1px solid var(--slate-300) !important;
+  transition: all 0.2s ease !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-back:hover {
+  color: var(--emerald-600) !important;
+  border-color: var(--emerald-500) !important;
+  background: var(--emerald-50) !important;
+}
+
+/* Green Action Button */
+.btn-predict {
+  width: 100% !important;
+  padding: 14px !important;
+  background: var(--emerald-500) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 14px !important;
+  font-weight: 700 !important;
+  box-shadow: 0 6px 20px -5px rgba(16, 185, 129, 0.3) !important;
+  transition: all 0.25s ease !important;
+  cursor: pointer;
+}
+
+.btn-predict:hover {
+  background: var(--emerald-600) !important;
+  box-shadow: 0 8px 24px -5px rgba(16, 185, 129, 0.4) !important;
+}
+
+.btn-predict:active {
+  transform: scale(0.99) !important;
+}
+
+/* Farmer-first result screen */
+.yield-result-summary-card,
+.yield-advice-card,
+.yield-chart-card,
+.yield-risk-card {
+  background: #ffffff;
+  border: 1px solid #d9eadf;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(40, 74, 52, 0.08);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.yield-content-wrapper {
+  max-width: 640px !important;
+}
+
+.yield-result-summary-card {
+  padding: 22px;
+  background: linear-gradient(180deg, #f4fff7 0%, #ffffff 58%);
+  border-color: #afe0bf;
+}
+
+.yield-result-complete {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.yield-result-emoji {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: #dff7e7;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  flex: 0 0 auto;
+}
+
+.yield-result-complete p {
+  color: #4d6657;
+  font-size: 13px;
+  font-weight: 800;
+  margin: 0 0 3px;
+}
+
+.yield-result-complete h2 {
+  color: #11391f;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.yield-primary-result {
+  border-top: 1px solid #dcefe3;
+  border-bottom: 1px solid #dcefe3;
+  padding: 18px 0;
+  margin-bottom: 18px;
+}
+
+.yield-primary-result span,
+.yield-money-stack span,
+.yield-risk-pill span {
+  color: #51675a;
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.yield-primary-result strong {
+  color: #0f5b2c;
+  display: block;
+  font-size: 40px;
+  font-weight: 950;
+  line-height: 1;
+}
+
+.yield-money-stack {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.yield-money-stack strong {
+  color: #1d2f23;
+  display: block;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.yield-risk-pill {
+  align-items: center;
+  background: #fff7df;
+  border: 1px solid #f0cd76;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 13px 14px;
+}
+
+.yield-risk-pill span {
+  margin: 0;
+}
+
+.yield-risk-pill strong {
+  color: #965d00;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.yield-risk-pill.risk-low {
+  background: #eaf8ee;
+  border-color: #9ad9ad;
+}
+
+.yield-risk-pill.risk-low strong {
+  color: #10783a;
+}
+
+.yield-risk-pill.risk-high {
+  background: #fff0ed;
+  border-color: #f1a394;
+}
+
+.yield-risk-pill.risk-high strong {
+  color: #b42318;
+}
+
+.yield-advice-card,
+.yield-chart-card,
+.yield-risk-card {
+  padding: 20px;
+}
+
+.yield-advice-card {
+  border-color: #a8dbc1;
+}
+
+.yield-section-heading {
+  align-items: flex-start;
+  color: #15633b;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.yield-section-heading h3 {
+  color: #143722;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.yield-section-heading p {
+  color: #627568;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 4px 0 0;
+}
+
+.yield-recommendation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.yield-recommendation-list li {
+  align-items: center;
+  color: #203628;
+  display: flex;
+  font-size: 18px;
+  font-weight: 850;
+  gap: 12px;
+  line-height: 1.35;
+}
+
+.yield-recommendation-list svg {
+  color: #128346;
+  flex: 0 0 auto;
+}
+
+.chart-wrapper.compact {
+  height: 170px;
+  margin-top: 8px;
+}
+
+.yield-risk-card {
+  background: #fffdf7;
+  border-color: #efd083;
+}
+
+.yield-section-heading.risk-heading {
+  color: #99640e;
+}
+
+.yield-risk-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.yield-risk-copy p {
+  color: #263429;
+  font-size: 16px;
+  font-weight: 750;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.yield-risk-copy span {
+  color: #6d4f12;
+  font-weight: 950;
+}
+
+.yield-result-actions {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+.yield-action-button {
+  align-items: center;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 17px;
+  font-weight: 900;
+  gap: 10px;
+  justify-content: center;
+  min-height: 56px;
+  padding: 15px 18px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  width: 100%;
+}
+
+.yield-action-button.primary {
+  background: #137a3c;
+  color: #ffffff;
+  box-shadow: 0 12px 20px rgba(19, 122, 60, 0.2);
+}
+
+.yield-action-button.secondary {
+  background: #eef7ef;
+  color: #164327;
+  border: 1px solid #b7dac1;
+}
+
+.yield-action-button:hover {
+  transform: translateY(-1px);
+}
+
+.yield-action-button:active {
+  transform: translateY(0);
+}
+
+@media (min-width: 560px) {
+  .yield-result-actions {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .yield-container {
+    padding: 20px 12px !important;
+  }
+
+  .yield-result-summary-card,
+  .yield-advice-card,
+  .yield-chart-card,
+  .yield-risk-card {
+    padding: 18px;
+  }
+
+  .yield-result-complete h2 {
+    font-size: 21px;
+  }
+
+  .yield-primary-result strong {
+    font-size: 34px;
+  }
+
+  .yield-money-stack {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .yield-money-stack strong {
+    font-size: 23px;
+  }
+
+  .yield-recommendation-list li {
+    font-size: 17px;
+  }
+
+  .chart-wrapper.compact {
+    height: 150px;
+  }
+}
+
+/* Farmer-first result screen */
+.yield-result-summary-card,
+.yield-chart-card,
+.yield-advice-card,
+.yield-risk-card {
+  width: 100%;
+  border-radius: 22px;
+  border: 1px solid rgba(19, 138, 75, 0.14);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 14px 34px -18px rgba(26, 55, 39, 0.28);
+  box-sizing: border-box;
+}
+
+.yield-result-summary-card {
+  padding: 22px;
+  color: #123522;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(237, 250, 239, 0.96)),
+    linear-gradient(90deg, rgba(19, 138, 75, 0.12), rgba(217, 154, 43, 0.1));
+}
+
+.yield-result-complete {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.yield-result-icon {
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #138a4b, #5aa65f);
+  box-shadow: 0 10px 22px -12px rgba(19, 138, 75, 0.9);
+}
+
+.yield-result-complete p {
+  margin: 0 0 2px;
+  color: #5f735f;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.yield-result-complete h2 {
+  margin: 0;
+  color: #123522;
+  font-size: 22px;
+  line-height: 1.18;
+  font-weight: 900;
+}
+
+.yield-primary-result {
+  padding: 18px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(19, 138, 75, 0.12);
+}
+
+.yield-primary-result span,
+.yield-money-stack span,
+.yield-risk-pill span {
+  display: block;
+  color: #526858;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.yield-primary-result strong {
+  display: block;
+  margin-top: 4px;
+  color: #0f3d24;
+  font-size: 38px;
+  line-height: 1.05;
+  font-weight: 950;
+}
+
+.yield-money-stack {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.yield-money-stack div {
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(19, 138, 75, 0.1);
+}
+
+.yield-money-stack strong {
+  display: block;
+  margin-top: 4px;
+  color: #146b3a;
+  font-size: 25px;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.yield-risk-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #fff8e7;
+  border: 1px solid rgba(217, 154, 43, 0.28);
+}
+
+.yield-risk-pill strong {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.yield-risk-pill.risk-low {
+  background: #edf9ef;
+  border-color: rgba(19, 138, 75, 0.22);
+}
+
+.yield-risk-pill.risk-medium {
+  background: #fff8e7;
+  border-color: rgba(217, 154, 43, 0.3);
+}
+
+.yield-risk-pill.risk-high {
+  background: #fff1ee;
+  border-color: rgba(215, 71, 50, 0.24);
+}
+
+.yield-chart-card,
+.yield-advice-card,
+.yield-risk-card {
+  padding: 18px;
+}
+
+.yield-section-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #138a4b;
+}
+
+.yield-section-heading h3 {
+  margin: 0;
+  color: #163826;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+.yield-section-heading p {
+  margin: 4px 0 0;
+  color: #647568;
+  font-size: 12px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.chart-wrapper.compact {
+  height: 176px;
+  margin-top: 12px;
+}
+
+.yield-recommendation-list {
+  display: grid;
+  gap: 12px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.yield-recommendation-list li {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 13px 14px;
+  border-radius: 15px;
+  color: #173b28;
+  background: #f6fbf5;
+  border: 1px solid rgba(19, 138, 75, 0.1);
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 850;
+}
+
+.yield-recommendation-list svg {
+  flex: 0 0 auto;
+  color: #138a4b;
+}
+
+.risk-heading {
+  color: #d99a2b;
+}
+
+.yield-risk-copy {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.yield-risk-copy p {
+  margin: 0;
+  color: #253d2c;
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 750;
+}
+
+.yield-risk-copy span {
+  color: #0f3d24;
+  font-weight: 950;
+}
+
+.yield-result-actions {
+  display: grid;
+  gap: 12px;
+  padding-bottom: 12px;
+}
+
+.yield-action-button {
+  width: 100%;
+  min-height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 0;
+  border-radius: 17px;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.yield-action-button:active {
+  transform: scale(0.98);
+}
+
+.yield-action-button.primary {
+  color: #ffffff;
+  background: linear-gradient(135deg, #138a4b, #3f9e55);
+  box-shadow: 0 14px 26px -16px rgba(19, 138, 75, 0.95);
+}
+
+.yield-action-button.secondary {
+  color: #123522;
+  background: #ffffff;
+  border: 1px solid rgba(19, 138, 75, 0.16);
+}
+
+@media (min-width: 560px) {
+  .yield-money-stack,
+  .yield-result-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 420px) {
+  .yield-result-summary-card {
+    padding: 18px;
+  }
+
+  .yield-result-complete h2 {
+    font-size: 20px;
+  }
+
+  .yield-primary-result strong {
+    font-size: 34px;
+  }
+
+  .yield-money-stack strong {
+    font-size: 22px;
+  }
+}

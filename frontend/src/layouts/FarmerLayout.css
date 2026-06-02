@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.farmer-app-shell {
+  /* Full-screen edge-to-edge Android shell */
+  min-height: 100vh;
+  height: 100dvh;
+  width: 100vw;
+  margin: 0;
+  background: #F7FAF8;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.farmer-workspace {
+  min-width: 0;
+  min-height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  overflow: hidden;
+}
+
+.farmer-topbar {
+  /* Fixed Android app bar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  height: 56px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 50%, #4CAF50 100%);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  padding-top: env(safe-area-inset-top);
+}
+
+.topbar-left {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.topbar-brand svg {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  opacity: 0.95;
+}
+
+.topbar-brand-content {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.app-brand-name {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+}
+
+.ag-icon-btn {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 16px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.ag-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.ag-icon-btn:active {
+  transform: scale(0.96);
+}
+
+.farmer-topbar h1 {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topbar-language {
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+}
+
+.topbar-language select {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  cursor: pointer;
+}
+
+.topbar-language select option {
+  background: #FFFFFF;
+  color: #1F2937;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.topbar-language select option:hover {
+  background: #F3F4F6;
+}
+
+.topbar-language select option:checked {
+  background: #EAF7EF;
+  color: #1B7F4A;
+  font-weight: 600;
+}
+
+.farmer-page-host {
+  /* Page content sits beneath the fixed topbar and above bottom nav */
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  padding: calc(16px + env(safe-area-inset-top)) 16px calc(88px + env(safe-area-inset-bottom));
+  margin-top: 56px; /* account for fixed topbar */
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.farmer-page-host::-webkit-scrollbar {
+  display: none;
+}
+
+.farmer-overlay {
+  position: fixed;
+  inset: 0;
+  border: 0;
+  background: rgba(10, 31, 18, 0.42);
+  z-index: 1100;
+}
+
+.farmer-sidebar {
+  /* Material 3 Android drawer */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1200;
+  width: 80vw;
+  max-width: 360px;
+  height: 100dvh;
+  padding: calc(18px + env(safe-area-inset-top)) 16px calc(18px + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #ffffff;
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+  transform: translateX(-100%);
+  transition: transform 260ms cubic-bezier(0.2, 0, 0, 1);
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  will-change: transform;
+  visibility: hidden;
+}
+
+.farmer-sidebar.open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+  position: relative;
+}
+
+.sidebar-brand {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 16px 0;
+}
+
+.brand-mark {
+  display: none;
+}
+
+.drawer-brand-logo {
+  height: 140px;
+  width: auto;
+  max-width: 280px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.sidebar-brand h2 {
+  margin: 0;
+  color: #0F3B1B;
+  font-size: 18px;
+  line-height: 1.15;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar-brand p {
+  margin: 4px 0 0;
+  color: #64748B;
+  font-size: 12px;
+  line-height: 1.25;
+  font-weight: 500;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+}
+
+.sidebar-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #E3ECE6;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #143D26;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.sidebar-close:hover {
+  background: #F7FAF8;
+}
+
+.farmer-identity-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #F8FCF9;
+  border: 1px solid #DDEEE3;
+  border-radius: 18px;
+}
+
+.farmer-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: #EAF7EF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.farmer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.farmer-name-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.farmer-name-row strong {
+  color: #143D26;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  line-height: 1.2;
+}
+
+.verified-badge-mini {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #EAF7EF;
+}
+
+.farmer-location-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #64748B;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 4px;
+  scrollbar-width: thin;
+}
+
+.sidebar-nav::-webkit-scrollbar {
+  width: 3px;
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb {
+  background: #E3ECE6;
+  border-radius: 999px;
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-section-title {
+  color: #64748B;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  padding: 0 4px;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nav-item {
+  width: 100%;
+  min-height: 56px;
+  border: none;
+  border-radius: 18px;
+  padding: 14px 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: transparent;
+  color: #475059;
+  cursor: pointer;
+  text-align: left;
+  transition: background 150ms ease, transform 120ms ease;
+}
+
+.nav-item:hover {
+  background: #F2F7F2;
+}
+
+.nav-item:active {
+  transform: translateY(1px);
+}
+
+.nav-item-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(46, 125, 50, 0.08);
+  flex-shrink: 0;
+}
+
+.nav-item:active {
+  transform: scale(0.98);
+}
+
+.nav-item.active {
+  background: #1B7F4A;
+  color: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(27, 127, 74, 0.2);
+}
+
+.nav-item-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(100, 116, 139, 0.08);
+  flex-shrink: 0;
+}
+
+.nav-item.active .nav-item-icon {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.history-icon {
+  background: #E8F5E9;
+}
+
+.help-icon {
+  background: #E3F2FD;
+}
+
+.contact-icon {
+  background: #DCFCE7;
+}
+
+.feedback-icon {
+  background: #FEF3C7;
+}
+
+.about-icon {
+  background: #ECFDF5;
+}
+
+.logout-icon {
+  background: #FEE2E2;
+}
+
+.nav-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.nav-item-label {
+  color: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+}
+
+.nav-item-subtitle {
+  color: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  opacity: 0.8;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+}
+
+.language-options {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
+  margin-left: 12px;
+  padding: 8px;
+  background: #F7FAF8;
+  border-radius: 12px;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: #143D26;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  cursor: pointer;
+  transition: background 120ms ease;
+}
+
+.language-option:hover {
+  background: #EAF7EF;
+}
+
+.language-option.active {
+  background: #EAF7EF;
+  font-weight: 600;
+}
+
+.sidebar-logout {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.nav-item.logout {
+  color: #DC2626;
+  background: #FFF1F2;
+  border: 1px solid #FECDD2;
+}
+
+.nav-item.logout:hover {
+  background: #FEE2E2;
+}
+
+.nav-item.logout .nav-item-icon {
+  background: #FEE2E2;
+}
+
+@media (max-width: 380px) {
+  .farmer-page-host {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .topbar-language {
+    padding: 0 8px;
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "short_name": "AgriFuture",
+  "name": "AgriFuture AI: Smart Farming Assistant",
+  "description": "AI-powered smart farming platform for disease detection, weather monitoring, and crop management",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#2e7d32",
+  "background_color": "#ffffff",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["agriculture", "business", "productivity", "utilities"],
+  "shortcuts": [
+    {
+      "name": "Scan Disease",
+      "short_name": "Scan",
+      "description": "Quick disease detection",
+      "url": "/disease",
+      "icons": [{"src": "logo192.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "Weather",
+      "short_name": "Weather",
+      "description": "Check weather conditions",
+      "url": "/weather",
+      "icons": [{"src": "logo192.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "Market Prices",
+      "short_name": "Market",
+      "description": "View market prices",
+      "url": "/market",
+      "icons": [{"src": "logo192.png", "sizes": "192x192"}]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Dashboard view on desktop"
+    },
+    {
+      "src": "screenshot-mobile.png",
+      "sizes": "375x667",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Dashboard view on mobile"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.2
+2 info using node@v22.17.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:D:\agrifutured\frontend\.npmrc
+5 silly config load:file:C:\Users\mored\.npmrc
+6 silly config load:file:C:\Users\mored\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" "D:\\agrifutured\\.npm-cache" "--fetch-timeout" "60000" "--fetch-retries" "1"
+9 verbose logfile logs-max:10 dir:D:\agrifutured\.npm-cache\_logs\2026-06-02T13_37_55_436Z-
+10 verbose logfile D:\agrifutured\.npm-cache\_logs\2026-06-02T13_37_55_436Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest @capacitor/android@^8.3.4
+15 silly packumentCache full:https://registry.npmjs.org/@capacitor%2fandroid cache-miss
+16 http fetch GET https://registry.npmjs.org/npm attempt 1 failed with UNABLE_TO_VERIFY_LEAF_SIGNATURE
+17 http fetch GET https://registry.npmjs.org/@capacitor%2fandroid attempt 1 failed with UNABLE_TO_VERIFY_LEAF_SIGNATURE
+18 http fetch GET https://registry.npmjs.org/npm attempt 2 failed with ETIMEDOUT
+19 http fetch GET https://registry.npmjs.org/@capacitor%2fandroid attempt 2 failed with ETIMEDOUT
+20 silly fetch manifest @capacitor/cli@^8.3.4
+21 silly packumentCache full:https://registry.npmjs.org/@capacitor%2fcli cache-miss
+22 http fetch GET https://registry.npmjs.org/@capacitor%2fcli attempt 1 failed with EACCES
+23 http fetch GET https://registry.npmjs.org/@capacitor%2fcli attempt 2 failed with EACCES
+24 silly fetch manifest @capacitor/core@^8.3.4
+25 silly packumentCache full:https://registry.npmjs.org/@capacitor%2fcore cache-miss
+26 http fetch GET https://registry.npmjs.org/@capacitor%2fcore attempt 1 failed with EACCES
+27 http fetch GET https://registry.npmjs.org/@capacitor%2fcore attempt 2 failed with EACCES
+28 silly fetch manifest axios@^1.16.1
+29 silly packumentCache full:https://registry.npmjs.org/axios cache-miss
+30 http fetch GET https://registry.npmjs.org/axios attempt 1 failed with EACCES
+31 http fetch GET https://registry.npmjs.org/axios attempt 2 failed with EACCES
+32 silly fetch manifest firebase@^12.11.0
+33 silly packumentCache full:https://registry.npmjs.org/firebase cache-miss
+34 http fetch GET https://registry.npmjs.org/firebase attempt 1 failed with EACCES
+35 http fetch GET https://registry.npmjs.org/firebase attempt 2 failed with EACCES
+36 silly fetch manifest framer-motion@^12.39.0
+37 silly packumentCache full:https://registry.npmjs.org/framer-motion cache-miss
+38 http fetch GET https://registry.npmjs.org/framer-motion attempt 1 failed with EACCES
+39 http fetch GET https://registry.npmjs.org/framer-motion attempt 2 failed with EACCES
+40 silly fetch manifest html2canvas@^1.4.1
+41 silly packumentCache full:https://registry.npmjs.org/html2canvas cache-miss
+42 http fetch GET https://registry.npmjs.org/html2canvas attempt 1 failed with EACCES
+43 http fetch GET https://registry.npmjs.org/html2canvas attempt 2 failed with EACCES
+44 silly fetch manifest jspdf@^4.2.1
+45 silly packumentCache full:https://registry.npmjs.org/jspdf cache-miss
+46 http fetch GET https://registry.npmjs.org/jspdf attempt 1 failed with EACCES
+47 http fetch GET https://registry.npmjs.org/jspdf attempt 2 failed with EACCES
+48 silly fetch manifest lucide-react@^1.16.0
+49 silly packumentCache full:https://registry.npmjs.org/lucide-react cache-miss
+50 http fetch GET https://registry.npmjs.org/lucide-react attempt 1 failed with EACCES
+51 http fetch GET https://registry.npmjs.org/lucide-react attempt 2 failed with EACCES
+52 silly fetch manifest react@^19.2.4
+53 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+54 http fetch GET https://registry.npmjs.org/react attempt 1 failed with EACCES
+55 http fetch GET https://registry.npmjs.org/react attempt 2 failed with EACCES
+56 silly fetch manifest react-dom@^19.2.4
+57 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+58 http fetch GET https://registry.npmjs.org/react-dom attempt 1 failed with EACCES
+59 http fetch GET https://registry.npmjs.org/react-dom attempt 2 failed with EACCES
+60 silly fetch manifest react-router-dom@^7.15.1
+61 silly packumentCache full:https://registry.npmjs.org/react-router-dom cache-miss
+62 http fetch GET https://registry.npmjs.org/react-router-dom attempt 1 failed with EACCES
+63 http fetch GET https://registry.npmjs.org/react-router-dom attempt 2 failed with EACCES
+64 silly fetch manifest react-scripts@5.0.1
+65 silly packumentCache full:https://registry.npmjs.org/react-scripts cache-miss
+66 http fetch GET https://registry.npmjs.org/react-scripts attempt 1 failed with EACCES
+67 http fetch GET https://registry.npmjs.org/react-scripts attempt 2 failed with EACCES
+68 silly fetch manifest recharts@^3.8.1
+69 silly packumentCache full:https://registry.npmjs.org/recharts cache-miss
+70 http fetch GET https://registry.npmjs.org/recharts attempt 1 failed with EACCES
+71 http fetch GET https://registry.npmjs.org/recharts attempt 2 failed with EACCES
+72 silly fetch manifest web-vitals@^2.1.4
+73 silly packumentCache full:https://registry.npmjs.org/web-vitals cache-miss
+74 http fetch GET https://registry.npmjs.org/web-vitals attempt 1 failed with EACCES
+75 http fetch GET https://registry.npmjs.org/web-vitals attempt 2 failed with EACCES
+76 silly fetch manifest autoprefixer@^10.5.0
+77 silly packumentCache full:https://registry.npmjs.org/autoprefixer cache-miss
+78 http fetch GET https://registry.npmjs.org/autoprefixer attempt 1 failed with EACCES
+79 http fetch GET https://registry.npmjs.org/autoprefixer attempt 2 failed with EACCES
+80 silly fetch manifest postcss@^8.5.14
+81 silly packumentCache full:https://registry.npmjs.org/postcss cache-miss
+82 http fetch GET https://registry.npmjs.org/postcss attempt 1 failed with EACCES
+83 http fetch GET https://registry.npmjs.org/postcss attempt 2 failed with EACCES
+84 silly fetch manifest tailwindcss@^3.4.3
+85 silly packumentCache full:https://registry.npmjs.org/tailwindcss cache-miss
+86 http fetch GET https://registry.npmjs.org/tailwindcss attempt 1 failed with EACCES
+87 http fetch GET https://registry.npmjs.org/tailwindcss attempt 2 failed with EACCES
+88 silly placeDep ROOT @capacitor/android@ OK for: agri-future@0.1.0 want: ^8.3.4
+89 silly placeDep ROOT @capacitor/cli@ OK for: agri-future@0.1.0 want: ^8.3.4
+90 silly placeDep ROOT @capacitor/core@ OK for: agri-future@0.1.0 want: ^8.3.4
+91 silly placeDep ROOT autoprefixer@ OK for: agri-future@0.1.0 want: ^10.5.0
+92 silly placeDep ROOT axios@ OK for: agri-future@0.1.0 want: ^1.16.1
+93 silly placeDep ROOT firebase@ OK for: agri-future@0.1.0 want: ^12.11.0
+94 silly placeDep ROOT framer-motion@ OK for: agri-future@0.1.0 want: ^12.39.0
+95 silly placeDep ROOT html2canvas@ OK for: agri-future@0.1.0 want: ^1.4.1
+96 silly placeDep ROOT jspdf@ OK for: agri-future@0.1.0 want: ^4.2.1
+97 silly placeDep ROOT lucide-react@ OK for: agri-future@0.1.0 want: ^1.16.0
+98 silly placeDep ROOT postcss@ OK for: agri-future@0.1.0 want: ^8.5.14
+99 silly placeDep ROOT react@ OK for: agri-future@0.1.0 want: ^19.2.4
+100 silly placeDep ROOT react-dom@ OK for: agri-future@0.1.0 want: ^19.2.4
+101 silly placeDep ROOT react-router-dom@ OK for: agri-future@0.1.0 want: ^7.15.1
+102 silly placeDep ROOT react-scripts@ OK for: agri-future@0.1.0 want: 5.0.1
+103 silly placeDep ROOT recharts@ OK for: agri-future@0.1.0 want: ^3.8.1
+104 silly placeDep ROOT tailwindcss@ OK for: agri-future@0.1.0 want: ^3.4.3
+105 silly placeDep ROOT web-vitals@ OK for: agri-future@0.1.0 want: ^2.1.4
+106 verbose type system
+107 verbose stack FetchError: request to https://registry.npmjs.org/@capacitor%2fandroid failed, reason: 
+107 verbose stack     at ClientRequest.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\minipass-fetch\lib\index.js:130:14)
+107 verbose stack     at ClientRequest.emit (node:events:518:28)
+107 verbose stack     at emitErrorEvent (node:_http_client:104:11)
+107 verbose stack     at _destroy (node:_http_client:898:9)
+107 verbose stack     at onSocketNT (node:_http_client:918:5)
+107 verbose stack     at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+108 error code ETIMEDOUT
+109 error errno ETIMEDOUT
+110 error network request to https://registry.npmjs.org/@capacitor%2fandroid failed, reason: 
+111 error network This is a problem related to network connectivity.
+111 error network In most cases you are behind a proxy or have bad network settings.
+111 error network
+111 error network If you are behind a proxy, please make sure that the
+111 error network 'proxy' config is set properly.  See: 'npm help config'
+112 silly unfinished npm timer reify 1780407475976
+113 silly unfinished npm timer reify:loadTrees 1780407475976
+114 verbose cwd D:\agrifutured\frontend
+115 verbose os Windows_NT 10.0.22631
+116 verbose node v22.17.0
+117 verbose npm  v10.9.2
+118 verbose exit 1
+119 verbose code 1
+120 error A complete log of this run can be found in: D:\agrifutured\.npm-cache\_logs\2026-06-02T13_37_55_436Z-debug-0.log

@@ -1,0 +1,225 @@
+.disease-page {
+  min-height: 100vh;
+  padding: 18px 16px 100px;
+  background: linear-gradient(160deg, #f6f9f4 0%, #eef7ee 55%, #fcfbf8 100%);
+  color: #123425;
+}
+
+.disease-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gov-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--ag-green-700);
+  font-weight: 800;
+}
+
+.disease-header h1 {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 42px);
+  line-height: 1.05;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  color: #315c41;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+
+
+.upload-panel {
+  margin-top: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8f0e9;
+}
+
+.image-preview-container {
+  width: 100%;
+  height: 300px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 2px solid #d5e4d8;
+  background: linear-gradient(180deg, #f5faf6 0%, #eef7f0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.image-preview-container:hover {
+  border-color: #23834f;
+  background: linear-gradient(180deg, #eef7f0 0%, #e8f5ea 100%);
+}
+
+.preview-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.preview-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(35, 131, 79, 0.95) 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+}
+
+.upload-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #23834f;
+  padding: 20px;
+  text-align: center;
+}
+
+.upload-placeholder svg {
+  color: #2da968;
+  opacity: 0.9;
+}
+
+.upload-placeholder p {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #23834f;
+  letter-spacing: 0.2px;
+}
+
+.upload-actions {
+  width: 100%;
+  display: flex;
+  gap: 14px;
+  margin-bottom: 8px;
+  align-items: stretch;
+}
+
+.file-btn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  min-height: 56px;
+  border: none;
+  border-radius: 14px;
+  padding: 18px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 0.96rem;
+  letter-spacing: 0.3px;
+}
+
+.primary-upload {
+  background: linear-gradient(135deg, #2da968, #23834f);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(35, 131, 79, 0.3);
+}
+
+.primary-upload:hover {
+  box-shadow: 0 6px 18px rgba(35, 131, 79, 0.35);
+}
+
+.primary-upload:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 8px rgba(35, 131, 79, 0.25);
+}
+
+.secondary-upload {
+  background: #ffffff;
+  color: #23834f;
+  border: 2.5px solid #d5e4d8;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-weight: 700;
+}
+
+.secondary-upload:hover {
+  border-color: #23834f;
+  background: #f8fcf9;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-upload:active {
+  transform: scale(0.97);
+  background: #f5faf6;
+}
+
+.scan-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #0B5ED7 0%, #0A58CA 100%);
+  color: #ffffff;
+  transition: all 0.25s ease;
+  padding: 18px 16px;
+  min-height: 56px;
+  box-shadow: 0 4px 14px rgba(11, 94, 215, 0.18);
+  font-size: 0.96rem;
+  letter-spacing: 0.3px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.scan-btn:hover:not(:disabled) {
+  box-shadow: 0 6px 18px rgba(11, 94, 215, 0.22);
+  background: #0A58CA;
+}
+
+.scan-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.scan-btn:not(:disabled):active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 8px rgba(11, 94, 215, 0.18);
+  background: #084EA8;
+}
+
+@media (max-width: 640px) {
+  .disease-page {
+    padding: 16px 14px 120px;
+  }
+
+  .upload-actions {
+    grid-template-columns: 1fr;
+  }
+}
