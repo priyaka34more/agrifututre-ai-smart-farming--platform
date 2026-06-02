@@ -842,6 +842,18 @@ def startup_event():
             "PyTorch Model loaded successfully"
         )
 
+        # ── Database connectivity check ──────────────────
+        from database import check_db_connection
+        db_ok = check_db_connection()
+        if db_ok:
+            logger.info("Database connection verified successfully.")
+        else:
+            logger.warning(
+                "Database connection check FAILED at startup. "
+                "Verify DATABASE_URL on Render and that the PostgreSQL "
+                "service is running and accessible."
+            )
+
         logger.info(
             "🌱 AgriFuture backend ready"
         )
