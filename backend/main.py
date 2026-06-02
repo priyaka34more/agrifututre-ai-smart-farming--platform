@@ -1,6 +1,8 @@
 import os
 import sys
 import json
+import torch
+import torchvision
 import uuid
 import time
 import logging
